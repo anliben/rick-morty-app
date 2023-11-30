@@ -1,0 +1,30 @@
+<po-page-default>
+  <div class="container">
+    <div class="btns">
+      <po-button p-label="Anterior" routerLink=""> </po-button>
+      <po-button p-label="Próxima" routerLink=""> </po-button>
+
+
+    </div>
+
+    <po-widget class="po-lg-6  card" p-title="Friend Request">
+      <ng-container>
+        <div class="po-row">
+          <po-avatar class="po-md-4" p-size="lg" [p-src]="img"> </po-avatar>
+
+          <div class="po-md-8">
+            <span class="po-sm-12 po-font-subtitle">
+              {{ name }}
+            </span>
+
+            <span class="po-sm-12 po-font-text"> Tipo: {{ type }} </span>
+
+            <span class="po-sm-12 po-font-text">
+              Ainda vive? {{ isDead }}
+            </span>
+          </div>
+        </div>
+      </ng-container>
+    </po-widget>
+  </div>
+</po-page-default>
